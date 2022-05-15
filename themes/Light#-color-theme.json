@@ -7,11 +7,23 @@
 	},
 	"tokenColors": [
 		{
-			"name": "Comments",
+			"name": "HTML: Doctype Declaration",
 			"scope": [
-				"comment",
-				"punctuation.definition.comment"
+				"meta.tag.metadata.processing",
+				"meta.tag.metadata.processing entity.name.tag",
+				"meta.tag.metadata.processing punctuation.definition.tag",
+
+				"meta.tag.metadata.doctype",
+				"meta.tag.metadata.doctype entity.name.tag",
+				"meta.tag.metadata.doctype punctuation.definition.tag"
 			],
+			"settings": {
+				"foreground": "#0b5694"
+			}
+		},
+		{
+			"name": "Comments",
+			"scope": ["comment", "punctuation.definition.comment"],
 			"settings": {
 				"foreground": "#1a6803",
 				"fontStyle": "italic" // "italic", "bold", "underline", "strikethrough"
@@ -21,7 +33,7 @@
 			"name": "Comments: Preprocessor",
 			"scope": "comment.block.preprocessor",
 			"settings": {
-				"fontStyle": "", 
+				"fontStyle": "",
 				"foreground": "#1a6803"
 			}
 		},
@@ -38,10 +50,7 @@
 		},
 		{
 			"name": "Invalid [Illegal]",
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
+			"scope": ["invalid", "invalid.illegal"],
 			"settings": {
 				"foreground": "#ff0000",
 				"fontStyle": "strikethrough"
@@ -51,7 +60,7 @@
 			"name": "Numbers",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#519b42",
+				"foreground": "#519b42"
 			}
 		},
 		{
@@ -147,19 +156,7 @@
 		{
 			"scope": "keyword.control.min",
 			"settings": {
-				"foreground": "#0a7e10",
-			}
-		},
-		{
-			"name": "HTML: Doctype Declaration",
-			"scope": [
-				"meta.tag.sgml.doctype",
-				"meta.tag.sgml.doctype string",
-				"meta.tag.sgml.doctype entity.name.tag",
-				"meta.tag.sgml punctuation.definition.tag.html"
-			],
-			"settings": {
-				"foreground": "#AAAAAA"
+				"foreground": "#0a7e10"
 			}
 		},
 		{
@@ -251,8 +248,7 @@
 				"meta.definition.variable.name",
 				"support.variable",
 				"entity.name.variable",
-				"constant.other.placeholder", // placeholders in strings
-
+				"constant.other.placeholder" // placeholders in strings
 			],
 			"settings": {
 				"foreground": "#001080"
@@ -265,14 +261,12 @@
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#0070C1",
+				"foreground": "#0070C1"
 			}
 		},
 		{
 			"name": "Object keys, TS grammar specific",
-			"scope": [
-				"meta.object-literal.key"
-			],
+			"scope": ["meta.object-literal.key"],
 			"settings": {
 				"foreground": "#001080"
 			}
