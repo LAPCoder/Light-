@@ -16,13 +16,30 @@
 		"type": "git",
 		"url": "https://github.com/LAPCoder/lightsharp"
 	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
 	"contributes": {
 		"themes": [
 			{
-				"label": "Light#",
+				"label": "Light# Color Theme",
 				"uiTheme": "vs",
-				"path": "./themes/Light#-color-theme.json"
+				"path": "./themes/Light#-color-theme.json",
 			}
-		]
+		],
+		"iconThemes": [
+			{
+				"id": "lightsharp-icon-theme",
+				"label": "Light# Icon Them",
+				"path": "./icons/Light#-icon-theme.json",
+				"_watch": true
+			}
+		],
 	}
 }
