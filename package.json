@@ -30,7 +30,7 @@
 			{
 				"label": "Light# Color Theme",
 				"uiTheme": "vs",
-				"path": "./themes/Light#-color-theme.json",
+				"path": "./themes/Light#-color-theme.json"
 			}
 		],
 		"iconThemes": [
@@ -40,6 +40,6 @@
 				"path": "./icons/Light#-icon-theme.json",
 				"_watch": true
 			}
-		],
+		]
 	}
 }
