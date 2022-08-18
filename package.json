@@ -1,21 +1,45 @@
 {
-    "name": "lightsharp",
-    "displayName": "Light#",
-    "description": "A light# (++++) color theme for VS Code",
-    "version": "0.0.0",
-    "engines": {
-        "vscode": "^1.67.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Light#",
-                "uiTheme": "vs",
-                "path": "./themes/Light#-color-theme.json"
-            }
-        ]
-    }
+	"name": "lightsharp",
+	"displayName": "Light#",
+	"description": "A light# (Light ++++) color theme for VS Code",
+	"version": "0.0.0",
+	"publisher": "LAPCoder",
+	"icon": "assets/icon.png",
+	"license": "MIT LICENSE. SEE IN LICENSE.txt",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LAPCoder/lightsharp"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Light# Color Theme",
+				"uiTheme": "vs",
+				"path": "./themes/Light#-color-theme.json",
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "lightsharp-icon-theme",
+				"label": "Light# Icon Them",
+				"path": "./icons/Light#-icon-theme.json",
+				"_watch": true
+			}
+		],
+	}
 }
