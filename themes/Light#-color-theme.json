@@ -134,7 +134,7 @@
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "#000000"
 			}
 		},
 		{
@@ -153,13 +153,16 @@
 		{
 			"name": "HTML: Doctype Declaration",
 			"scope": [
-				"meta.tag.sgml.doctype",
-				"meta.tag.sgml.doctype string",
-				"meta.tag.sgml.doctype entity.name.tag",
-				"meta.tag.sgml punctuation.definition.tag.html"
+				"meta.tag.metadata.processing",
+				"meta.tag.metadata.processing entity.name.tag",
+				"meta.tag.metadata.processing punctuation.definition.tag",
+
+				"meta.tag.metadata.doctype",
+				"meta.tag.metadata.doctype entity.name.tag",
+				"meta.tag.metadata.doctype punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#AAAAAA"
+				"foreground": "#0b5694"
 			}
 		},
 		{
